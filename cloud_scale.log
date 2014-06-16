@@ -1,0 +1,36 @@
+DEBUG:root:Send REST request to server http://127.0.0.1:5000
+DEBUG:root:Send REST request to server http://127.0.0.1:5000
+DEBUG:root:Send REST request to server http://127.0.0.1:5000
+DEBUG:root:Send REST request to server http://127.0.0.1:5000
+DEBUG:root:Send REST request to server http://127.0.0.1:5000
+DEBUG:root:Send REST request to server http://127.0.0.1:5000
+DEBUG:root:Send REST request to server http://127.0.0.1:5000
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1
+DEBUG:root:Send REST request to server http://127.0.0.1:5000
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1
+DEBUG:requests.packages.urllib3.connectionpool:"GET /rq/api/v1.0/queues HTTP/1.1" 200 1120
+INFO:root:queue rqueue:queues:file_sync:notifs_2c676c has size: 24. trigger url http://176.31.105.64:8000/v1/signal/arn:openstack:heat::704a532a5260484ba56b069b7219d3ff:stacks/wordpress3/159a8cda-de19-47f9-afe3-3c1640e9e900/resources/web_server_scaleup_policy?Timestamp=2014-06-13T13:38:11Z&SignatureMethod=HmacSHA256&AWSAccessKeyId=deca0a0a61a34b75bbcb37cfe437190f&SignatureVersion=2&Signature=lJvB6yTREr2zntr8hVBq7gu4CWZuknf7K3oYJQMfg6Y=
+INFO:root:Keystone token expired, request new token
+DEBUG:root:Receive keystone response: {"auth":{"tenantName": "admin", "passwordCredentials": {"username": "admin", "password": "mdipass"}}}
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 176.31.105.64
+DEBUG:requests.packages.urllib3.connectionpool:"POST /v2.0/tokens HTTP/1.1" 200 2934
+DEBUG:root:New keystone expire time: 2014-06-14T16:03:24Z
+DEBUG:root:Send scaling request to: http://176.31.105.64:8000/v1/signal/arn:openstack:heat::704a532a5260484ba56b069b7219d3ff:stacks/wordpress3/159a8cda-de19-47f9-afe3-3c1640e9e900/resources/web_server_scaleup_policy?Timestamp=2014-06-13T13:38:11Z&SignatureMethod=HmacSHA256&AWSAccessKeyId=deca0a0a61a34b75bbcb37cfe437190f&SignatureVersion=2&Signature=lJvB6yTREr2zntr8hVBq7gu4CWZuknf7K3oYJQMfg6Y=
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 176.31.105.64
+DEBUG:requests.packages.urllib3.connectionpool:"POST /v1/signal/arn:openstack:heat::704a532a5260484ba56b069b7219d3ff:stacks/wordpress3/159a8cda-de19-47f9-afe3-3c1640e9e900/resources/web_server_scaleup_policy?Timestamp=2014-06-13T13:38:11Z&SignatureMethod=HmacSHA256&AWSAccessKeyId=deca0a0a61a34b75bbcb37cfe437190f&SignatureVersion=2&Signature=lJvB6yTREr2zntr8hVBq7gu4CWZuknf7K3oYJQMfg6Y= HTTP/1.1" 500 778
+DEBUG:root:Receive response after scale: <Response [500]>
+DEBUG:root:Send REST request to server http://127.0.0.1:5000
+DEBUG:root:Send REST request to server http://127.0.0.1:5000
+DEBUG:root:Send REST request to server http://127.0.0.1:5000
+DEBUG:root:Send REST request to server http://127.0.0.1:5000
+DEBUG:root:Send REST request to server http://127.0.0.1:5000
+INFO:root:queue rqueue:queues:file_sync:notifs_2c676c has large size: 24. trigger url up http://176.31.105.64:8000/v1/signal/arn:openstack:heat::704a532a5260484ba56b069b7219d3ff:stacks/wordpress3/159a8cda-de19-47f9-afe3-3c1640e9e900/resources/web_server_scaleup_policy?Timestamp=2014-06-13T13:38:11Z&SignatureMethod=HmacSHA256&AWSAccessKeyId=deca0a0a61a34b75bbcb37cfe437190f&SignatureVersion=2&Signature=lJvB6yTREr2zntr8hVBq7gu4CWZuknf7K3oYJQMfg6Y=
+INFO:root:Keystone token expired, request new token
+DEBUG:root:Receive keystone response: {"auth":{"tenantName": "admin", "passwordCredentials": {"username": "admin", "password": "mdipass"}}}
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 176.31.105.64
+DEBUG:requests.packages.urllib3.connectionpool:"POST /v2.0/tokens HTTP/1.1" 200 2934
+DEBUG:root:New keystone expire time: 2014-06-17T09:09:40Z
+DEBUG:root:Send scaling request to: http://176.31.105.64:8000/v1/signal/arn:openstack:heat::704a532a5260484ba56b069b7219d3ff:stacks/wordpress3/159a8cda-de19-47f9-afe3-3c1640e9e900/resources/web_server_scaleup_policy?Timestamp=2014-06-13T13:38:11Z&SignatureMethod=HmacSHA256&AWSAccessKeyId=deca0a0a61a34b75bbcb37cfe437190f&SignatureVersion=2&Signature=lJvB6yTREr2zntr8hVBq7gu4CWZuknf7K3oYJQMfg6Y=
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 176.31.105.64
+DEBUG:requests.packages.urllib3.connectionpool:"POST /v1/signal/arn:openstack:heat::704a532a5260484ba56b069b7219d3ff:stacks/wordpress3/159a8cda-de19-47f9-afe3-3c1640e9e900/resources/web_server_scaleup_policy?Timestamp=2014-06-13T13:38:11Z&SignatureMethod=HmacSHA256&AWSAccessKeyId=deca0a0a61a34b75bbcb37cfe437190f&SignatureVersion=2&Signature=lJvB6yTREr2zntr8hVBq7gu4CWZuknf7K3oYJQMfg6Y= HTTP/1.1" 400 726
+DEBUG:root:Receive response after scale: <Response [400]>

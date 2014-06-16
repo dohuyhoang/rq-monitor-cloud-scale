@@ -1,0 +1,25 @@
+{
+	"default_threshold_up": 10,
+	"default_threshold_down": 2,
+	"queues": [
+		{
+			"queue_name": "queue1",
+			"threshold_up": 5,
+			"url_alarm_up": "url1",
+			"url_alarm_down": "urldown1"
+		},
+		{
+			"queue_name": "rqueue:queues:file_sync:notifs_2c676c",
+			"threshold_up": 20,
+			"threshold_down": 5,
+			"url_alarm_up": "http://176.31.105.64:8000/v1/signal/arn:openstack:heat::704a532a5260484ba56b069b7219d3ff:stacks/wordpress3/159a8cda-de19-47f9-afe3-3c1640e9e900/resources/web_server_scaleup_policy?Timestamp=2014-06-13T13:38:11Z&SignatureMethod=HmacSHA256&AWSAccessKeyId=deca0a0a61a34b75bbcb37cfe437190f&SignatureVersion=2&Signature=lJvB6yTREr2zntr8hVBq7gu4CWZuknf7K3oYJQMfg6Y=",
+			"url_alarm_down": "urldown2"
+		},
+		{
+			"queue_name": "queue3",
+			"url_alarm_up": "url3",
+			"url_alarm_down": "urldown3"
+		}
+	]
+
+}
