@@ -5,6 +5,7 @@ import requests
 import sys
 import ConfigParser
 import logging
+import os
 from cloud_request import Cloud
 import shell as sh
 CONFIG_PATH = "./cloud.conf"
@@ -84,14 +85,19 @@ class MonitorEngine(threading.Thread):
             sleep(MonitorEngine.INTERVAL)
 
 
-
+def assure_path_exists(path):
+    dir = os.path.dirname(path)
+    if not os.path.exists(dir):
+        os.makedirs(dir)
 
 if __name__ == '__main__':
 
     'Load configs'
     config = ConfigParser.ConfigParser()
     config.read(r'%s'%CONFIG_PATH)
-    logging.basicConfig(filename=config.get('Log', 'log_path'),level=config.get('Log', 'log_level'))
+    log_path = config.get('Log', 'log_path')
+    assure_path_exists(log_path)
+    logging.basicConfig(filename=log_path,level=config.get('Log', 'log_level'))
     
     username = config.get('REST_server', 'username')
     password = config.get('REST_server', 'password')
