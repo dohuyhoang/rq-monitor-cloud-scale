@@ -1,0 +1,26 @@
+[General]
+request_interval=10
+use_ssh=True
+
+[Log]
+log_path=./log/cloud_scale.log
+log_level=DEBUG
+
+[OpenStack]
+url_keystone=http://yourcloudip:35357/v2.0/tokens
+tenant_name=
+username=
+password=
+
+[Scaling]
+policy_path=./policy_map.json
+
+[REST_server]
+server_url=http://127.0.0.1:5000
+username =
+password=
+
+[SSH]
+RQ_server=
+ssh_username=
+
